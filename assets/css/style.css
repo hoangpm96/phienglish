@@ -1499,3 +1499,45 @@ p {
   display: none; }
   .back-to-top:hover {
     color: #fff; }
+
+
+    /* Price  */
+.pricing-list {
+  text-align: left;
+  margin-top: 24px;
+}
+.pricing-list ul li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E2E2E;
+  margin-top: 16px;
+}
+.pricing-list ul li i {
+  color: #F6B141;
+  margin-right: 8px;
+}
+.pricing-header .sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #2E2E2E;
+  position: relative;
+  margin-top: 24px;
+}
+.pricing-header .month {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #6c6c6c;
+  margin-top: 3px;
+}
+.pricing-header .month .price {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #2E2E2E;
+    margin-top: 8px;
+}
+.rounder-btn {
+  border-radius: 50px;
+}
