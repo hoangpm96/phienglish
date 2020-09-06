@@ -1,0 +1,493 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>phiEnglish - Tiếng Anh Online với giáo viên Philippines</title>
+
+    <meta name="description"
+        content="Dịch vụ kết nối việc học Tiếng Anh giữa học viên và giáo viên Philippines với giá cả hợp lý nhất, được cung cấp bởi học viên từng học Tiếng Anh tại Philippines">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- share in social -->
+    <meta property="og:title" content="phiEnglish - Tiếng Anh Online (1-1) với giáo viên Philippines">
+    <meta property="og:description"
+        content="phiEnglish - Giao tiếp tiếng Anh tốt hơn khi học tiếng Anh với giáo viên Philippines">
+    <meta property="og:site_name" content="phiEnglish">
+    <meta property="og:url" content="https://phienglish.com/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="assets/images/header-hero.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="572">
+    <meta property="og:image:alt" content="Học tiếng Anh online (1-1) với giáo viên Philippines">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/tuition.css">
+
+
+</head>
+
+<body>
+    <script>
+        var password;
+        var pass1 = "develop";
+        var pass2 = " develop123";
+        var pass3 = "develop111";
+        var pass4 = " develop112";
+        password = prompt('Tính năng đang được phát triển, vui lòng nhập mật khẩu để xem!', ' ');
+        if (password == pass1 || password == pass2 || password == pass3 || password == pass4)
+            alert('Mật khẩu chính xác. Vui lòng nhấn OK để xem version đang phát triển!');
+        else {
+            alert('Mật khẩu không chính xác. Trang web sẽ đưa bạn về trang chủ.');
+            window.location = "index.html";
+        }
+        function openTeacher(evt, country) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(country).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/phienglishlogov2.png" style="width:110px;" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#phi">Giáo viên Philippines</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#vn">Giáo viên Việt Nam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#register">Đăng ký ngay</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+
+                            <div class="navbar-btn d-none d-sm-inline-block">
+                                <a class="main-btn" data-scroll-nav="0" href="index.html">Trở về trang chủ</a>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+
+        <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/header-teacher.svg)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="header-hero-content text-center">
+                            <h3 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Giáo
+                                viên đã sẵn sàng</h3>
+                            <h2 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Hãy
+                                chọn ngay giáo viên cho mình</h2>
+                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">Lịch học siêu
+                                linh hoạt, bạn có thể tự sắp xếp với giáo viên.</p>
+                            <a href="#phi" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
+                                data-wow-delay="0.8s">Xem ngay</a>
+                            <p style="height: 100px;"></p>
+                        </div> <!-- header hero content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div id="particles-1" class="particles"></div>
+        </div> <!-- header hero -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+    <!--====== PHI TEACHER PART START ======-->
+    <section id="phi" class="services-area pt-50">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="section-title text-center pb-30">
+                        <div class="line m-auto"></div>
+                        <h3 class="title"><span>Giáo viên </span>Philippines <span>(19)</span></h3>
+                    </div> <!-- section title -->
+                </div>
+<!-- CONTENT HERE -->
+<!-- <div class="wrapper">
+    <h1 class="wrapper__title">javascript slider calculator</h1>
+    <form class="calculator">
+            <div class="calculator__row">
+                    <label for="bill">enter the bill amount for your meal: $</label>
+                    <input type="text" id="bill" class="calculator__bill" value="5" required/>
+            </div>
+            <div class="calculator__row">
+                    <label for="tip">tip amount: <span class="tip-amount"></span></label>
+                    <input type="range" min="0" max="100" value="0" step="1" class="calculator__tip" id="tip" required/>
+            </div>
+            <div class="calculator__row">
+                    <h2 class="calculator__info">tip to leave: <span class="calculator__result"></span></h2>
+            </div>
+    </form>
+</div> -->
+<div id="container">
+    <h1>Tip Calculator</h1>
+    <div id="calculator">
+  
+  
+      <form>
+        <p>How much was your bill?
+          <p>
+            $ <input id="billamt" type="text" placeholder="Bill Amount">
+  
+            <p>How was your service?
+              <p>
+                <select id="serviceQual">
+              <option disabled selected value="0">-- Choose an Option --</option>
+              <option value="0.3">30&#37; &#45; Outstanding</option>
+              <option value="0.2">20&#37; &#45; Good</option>
+              <option value="0.15">15&#37; &#45; It was OK</option>
+              <option value="0.1">10&#37; &#45; Bad</option>
+              <option value="0.05">5&#37; &#45; Terrible</option>
+          </select>
+  
+      </form>
+      <p>How many people are sharing the bill?</p>
+      <input id="peopleamt" type="text" placeholder="Number of People"> people
+      <button type="button" id="calculate">Calculate!</button>
+  
+    </div>
+    <!--calculator end-->
+    <div id="totalTip">
+      <sup>$</sup><span id="tip">0.00</span>
+      <small id="each">each</small>
+    </div>
+    <!--totalTip end-->
+  
+  </div>
+  <!--container end-->
+  
+  <script type="text/javascript" src="/assets/js/tipcalculator.js"></script>
+
+            </div> <!-- row -->
+
+
+        </div> <!-- container -->
+    </section>
+
+    <!--====== PHI TEACHER PART ENDS ======-->
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area pt-120">
+        <div class="container">
+            <div id="register" class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="subscribe-content mt-45">
+                            <h2 class="subscribe-title">Đăng ký học <span>với giáo viên</span></h2>
+                            <p style="margin-top: 10px;">Bạn sẽ được học thử 25 phút trước khi quyết định học.</p>
+                            <p style="margin-top: 10px;">Chúng tôi sẽ liên hệ bạn trong vòng 24 giờ sau khi đăng ký.</p>
+                            <p style="margin-top: 10px;">Mọi chi tiết xin vui lòng liên hệ SĐT: 032 656 2797.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="subscribe-form mt-50">
+                            <form class="ggform" name="submit-to-google-sheet">
+                                <input name="fullname" type="text" placeholder="Nhập Họ và Tên">
+                                <input name="phonenumber" type="number" class="mt-10" placeholder="Nhập Số điện thoại"
+                                    required>
+                                <input name="teacher" type="text" class="mt-10" placeholder="Giáo viên bạn chọn"
+                                    required>
+                                <select id="course" name="course" class="mt-10">
+                                        <option value="esl">Khóa học Giao tiếp</option>
+                                        <option value="business">Khóa học Business</option>
+                                        <option value="TOEIC">Khóa học TOEIC</option>
+                                        <option value="IELTs">Khóa học IELTs</option>
+                                </select>
+                                <input name="schedule" type="text" class="mt-10" placeholder="Lịch học (ví dụ: 2-4-6 từ 2h - 4h chiều)"
+                                    required>
+                                <button class="main-btn mt-10" type="submit">Đăng ký học với giáo viên</button>
+                            </form>
+                            <div class="loading js-loading is-hidden">
+                                <div class="loading-spinner">
+                                    <img class="author" src="assets/images/reviewer/antrinh.jpg" alt="author">
+                                    <!-- <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle></svg> -->
+                                </div>
+                            </div>
+                            <p class="js-success-message is-hidden" style="color:#F39C12;">Cảm ơn bạn đã gửi thông tin
+                                đăng ký đến chúng tôi. Chúng tôi sẽ liên hệ bạn trong vòng 24 giờ.</p>
+                            <p class="js-error-message is-hidden" style="color:#F39C12;">Kết nối hệ thống đang bị gián
+                                đoạn. Quý khách vui lòng tải lại trang và thử lại!</p>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- subscribe area -->
+            <div class="footer-widget pb-100">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <a class="logo" href="#">
+                                <img src="assets/images/phienglishlogov2.png" style="width:110px;" alt="logo">
+                            </a>
+                            <p class="text">Là một học viên từng học tiếng Anh tại Philippines, thấy sự hiệu quả cũng
+                                như giá cả hợp lý cho học viên Việt Nam.
+                                <a style="color:#F39C12;" href="https://facebook.com/hoangpm96/" target="_blank">Hoàng
+                                    Phan (King)</a> mở dịch vụ kết nối giữa học viên và giáo viên Philippines với giá cả
+                                hợp lý nhất.</p>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/phienglishstudy/" target="_blank"><i
+                                            class="lni-facebook-filled"></i></a></li>
+                                            <li><a href="tel:0326562797" target="_blank"><i
+                                                class="lni-phone"></i></a></li>
+                                <!-- <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
+                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li> -->
+                            </ul>
+                        </div> <!-- footer about -->
+                    </div>
+                    <div class="col-lg-5 col-md-7 col-sm-7">
+                        <div class="footer-link d-flex mt-50 justify-content-md-between">
+                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <div class="footer-title">
+                                    <h4 class="title">Thông tin khác</h4>
+                                </div>
+                                <ul class="link">
+                                    <li><a href="teacher.html">Danh sách giáo viên</a></li>
+                                    <li><a href="courses.html">Danh sách khóa học</a></li>
+                                    <li><a href="tuition.html">Học phí</a></li>
+                                    <li><a href="policy.html">Chính sách bảo lưu</a></li>
+                                    <li><a href="contact.html">Thông tin liên hệ</a></li>
+                                </ul>
+                            </div> <!-- footer wrapper -->
+                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <div class="footer-title">
+                                    <h4 class="title">Thông tin chính</h4>
+                                </div>
+                                <ul class="link">
+                                    <li><a href="#home">Trang chủ</a></li>
+                                    <li><a href="#courses">Khóa học</a></li>
+                                    <li><a href="#benefit">Quyền lợi</a></li>
+                                    <li><a href="#facts">Tại sao?</a></li>
+                                    <li><a href="#teachers">Giáo viên</a></li>
+                                </ul>
+                            </div> <!-- footer wrapper -->
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-5">
+                        <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                            <div class="footer-title">
+                                <h4 class="title">Liên hệ</h4>
+                            </div>
+                            <ul class="contact">
+                                <li>(+84)326 56 2797 (Zalo)</li>
+                                <li>hoangpm.qn96@gmail.com</li>
+                                <li>www.toilamba.com</li>
+                                <li>Facebook - <a href="https://facebook.com/hoangpm96" style="color:#F39C12;"
+                                        target="_blank">Hoàng Phan</a></li>
+                                <li>Số 32 đường Thủy Lợi, Quận 9, Hồ Chí Minh, Việt Nam.</li>
+                            </ul>
+                        </div> <!-- footer contact -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer widget -->
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright d-sm-flex justify-content-between">
+                            <div class="copyright-content">
+                                <p class="text">Integration by: <a href="https://toilamba.com" rel="nofollow"
+                                        target="_blank">Hoang Phan</a></p>
+                            </div> <!-- copyright content -->
+                        </div> <!-- copyright -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer copyright -->
+        </div> <!-- container -->
+        <div id="particles-2"></div>
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== PART START ======-->
+
+    <!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-"></div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!--====== PART ENDS ======-->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw_cMQNaTif3rwIKY112v_gRKh8j5MVQgauO_ElOWttiXRAnCBH/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const loading = document.querySelector('.js-loading')
+        const successMessage = document.querySelector('.js-success-message')
+        const errorMessage = document.querySelector('.js-error-message')
+        const ggform = document.querySelector('.ggform')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    loading.style.display = "block";
+                    console.log('Thành công rồi!', response);
+                    ggform.style.display = "none";
+                    loading.style.display = "none";
+                    successMessage.style.display = "block";
+                })
+                .catch(error => {
+                    loading.style.display = "block";
+                    console.error('Thất bại rồi!', error.message)
+                    ggform.style.display = "none";
+                    loading.style.display = "none";
+                    errorMessage.style.display = "block";
+                })
+        })
+    </script>
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--====== Plugins js ======-->
+    <script src="assets/js/plugins.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Particles js ======-->
+    <script src="assets/js/particles.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+    <!--====== tuition js ======-->
+    <script src="assets/js/tuition.js"></script>
+    
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="114939267004729" theme_color="#F39C12"
+        logged_in_greeting="Chào bạn! Bạn  muốn tìm hiểu các khóa học Tiếng Anh của phiEnglish?"
+        logged_out_greeting="Chào bạn! Bạn  muốn tìm hiểu các khóa học Tiếng Anh của phiEnglish?">
+    </div>
+</body>
+
+</html>
