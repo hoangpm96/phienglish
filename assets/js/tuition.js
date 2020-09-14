@@ -1,87 +1,94 @@
-$(document).ready( function () {
+function calculateTuition() {
+  var typeOfCourse = document.getElementById("tcourse").value;
+  var numOfWeek = document.getElementById("nweek").value;
+  var numOfDay = document.getElementById("nday").value;
+  var numOfHour = document.getElementById("nhour").value;
+  var pricetemplate = [0, 5, 4.506, 6, 6.5, 7, 8, 10
+    , 5.5, 4.6, 6.3, 6.9, 7.5, 8.5, 11
+    , 6, 5, 6.6, 7.2, 7.8, 10, 12.5];
+  var extratemplate = [0, 0, 1, 2, 2.5,3,4,4.5,5, 7, 7.5, 8, 10]; // weeks
+                   // 0T,1T,2T,3T,4T,5T,6T,7T,8T,9T,10T,11T,12T
+  var vnd = 23300;
 
-
-    // VARIABLES
-    // ----------------------------------------------------------
-
-    var amount, percent, result;
-    var calculator = $('.calculator');
-    var calculatorBill = calculator.find('.calculator__bill');
-    var calculatorTip = calculator.find('.calculator__tip');
-    var calculatorResult = calculator.find('.calculator__result');
-    var tipAmount = calculator.find('.tip-amount');
-
-
-    // INIT BILL
-    // ----------------------------------------------------------
-
-    $(window).on('DOMContentLoaded', function () {
-        tipAmount.text( calculatorTip.val() + '%' );
-        amount = calculatorBill.val() * 1;
-        percent = calculatorTip.val() * 1;
-        result = amount + amount * ( percent / 100 );
-        calculatorResult.text( result.toFixed(2) + '$' );
-    });
-
-
-    // RANGE FUNCTION
-    // ----------------------------------------------------------
-
-    calculatorTip.on('change', function () {
-
-        if ( calculatorBill.val() === '' || isNaN( calculatorBill.val() ) ) {
-            alert('Enter bill amount, please!')
-        } else {
-            amount = calculatorBill.val() * 1;
-        }
-
-        tipAmount.text( calculatorTip.val() + '%' );
-        percent = calculatorTip.val() * 1;
-        result = amount + amount * ( percent / 100 );
-        calculatorResult.text( result.toFixed(2) + '$' );
-    });
-
-});
-
-
-
-//Calculate Tip
-function calculateTip() {
-    var billAmt = document.getElementById("billamt").value;
-    var serviceQual = document.getElementById("serviceQual").value;
-    var numOfPeople = document.getElementById("peopleamt").value;
-  
-    //validate input
-    if (billAmt === "" || serviceQual == 0) {
-      alert("Please enter values");
-      return;
-    }
-    //Check to see if this input is empty or less than or equal to 1
-    if (numOfPeople === "" || numOfPeople <= 1) {
-      numOfPeople = 1;
-      document.getElementById("each").style.display = "none";
-    } else {
-      document.getElementById("each").style.display = "block";
-    }
-  
-    //Calculate tip
-    var total = (billAmt * serviceQual) / numOfPeople;
-    //round to two decimal places
-    total = Math.round(total * 100) / 100;
-    //next line allows us to always have two digits after decimal point
-    total = total.toFixed(2);
-    //Display the tip
-    document.getElementById("totalTip").style.display = "block";
-    document.getElementById("tip").innerHTML = total;
-  
+  //validate input
+  if (typeOfCourse == "") {
+    alert("Vui lòng chọn khóa học");
+    return;
   }
-  
-  //Hide the tip amount on load
-  document.getElementById("totalTip").style.display = "none";
-  document.getElementById("each").style.display = "none";
-  
-  //click to call function
-  document.getElementById("calculate").onclick = function() {
-    calculateTip();
-  
+  if (numOfWeek == "") {
+    alert("Vui lòng chọn số tuần học");
+    return;
+  }
+  if (numOfDay == "") {
+    alert("Vui lòng chọn số buổi học/tuần");
+    return;
+  }
+  if (numOfHour == "") {
+    alert("Vui lòng chọn số giờ học/buổi");
+    return;
+  }
+
+  // Clear information
+
+  document.getElementById("typeOfTeacher").innerHTML = "";
+  document.getElementById("changeTeacher").innerHTML = "";
+  document.getElementById("tuitiontotal").innerHTML = "";
+  document.getElementById("vndtuitiontotal").innerHTML = "";
+  document.getElementById("tuitionperhour").innerHTML = "";
+  document.getElementById("hourstostudy").innerHTML = "";
+  document.getElementById("tryingclasses").innerHTML = "";
+  document.getElementById("tryingclasses").innerHTML = "";
+  document.getElementById("tryingclassesinfo").innerHTML = "";
+  document.getElementById("extraweeks").innerHTML = "";
+  document.getElementById("extrahours").innerHTML = "";
+  document.getElementById("extravalue").innerHTML = "";
+
+  var totalHour = numOfWeek * numOfDay * numOfHour;
+  var id;
+  if (totalHour >= 16) {
+    id = 0;
+  } else {
+    if (totalHour >= 8) {
+      id = 1;
+    } else { id = 2; }
   };
+  //              get nOWeeks   get months
+  var extraWeek = extratemplate[Math.floor(numOfWeek/4)];
+  var extraHours = extraWeek*numOfDay*numOfHour;
+  var unitprice = pricetemplate[id * 7 + parseInt(typeOfCourse)];
+  var tuitiontotal = totalHour * unitprice;
+  var vndtuitiontotal = tuitiontotal * vnd;
+  var nOfTrying = 1 + Math.floor(totalHour / 32);
+  document.getElementById("introduction").innerHTML = "Kết quả:";
+  document.getElementById("introduction2").innerHTML = "";
+  if (typeOfCourse == 2) {
+    document.getElementById("typeOfTeacher").innerHTML = "Giáo viên Việt Nam giảng dạy";
+  }
+  else {document.getElementById("typeOfTeacher").innerHTML = "Giáo viên Philippines giảng dạy"}
+  document.getElementById("teachertitle").innerHTML = "Thông tin giáo viên:";
+  document.getElementById("tuitiontitle").innerHTML = "Thông tin học phí:";
+  document.getElementById("extratitle").innerHTML = "Quà tặng:";
+  document.getElementById("chooseTeacher").innerHTML = "Chọn giáo viên giảng dạy";
+  document.getElementById("tuitiontotal").innerHTML = "Học phí của bạn là: $" + tuitiontotal;
+  document.getElementById("vndtuitiontotal").innerHTML = "Học phí (vnd) của bạn là: " + formatvnd(vndtuitiontotal) + " đồng";
+  document.getElementById("tuitionperhour").innerHTML = "Học phí mỗi giờ là: $" + unitprice  + " = " + formatvnd(unitprice*vnd) + " đồng";
+  document.getElementById("hourstostudy").innerHTML = "Tổng số giờ học của bạn là: " + totalHour + " giờ";
+  document.getElementById("tryingtitle").innerHTML = "Lớp học thử:"
+  document.getElementById("tryingclasses").innerHTML = "Số buổi được học thử tối đa là: " + nOfTrying + " (25 phút/buổi)";
+  if (nOfTrying > 1) {
+    document.getElementById("tryingclassesinfo").innerHTML = "Mỗi buổi học thử cách nhau tối thiểu 32 giờ học, bạn có thể học thử để thay đổi giáo viên.";
+    document.getElementById("changeTeacher").innerHTML = "Được phép đổi giáo viên.";
+  }
+  if (extraWeek>0 & (totalHour >=32)) {
+    document.getElementById("extraweeks").innerHTML = "Quà tặng được tặng thêm: " + extraWeek + " tuần.";
+    document.getElementById("extrahours").innerHTML = "Số giờ được tặng tương ứng: " + extraHours + " giờ.";
+    document.getElementById("extravalue").innerHTML = "Giá trị quà tặng tương ứng: $" + extraHours*unitprice + " = " + formatvnd(extraHours*unitprice*vnd) + " đồng";
+  } else {
+    document.getElementById("extraweeks").innerHTML = "Không có quà tặng do số giờ học chưa đáp ứng đủ điều kiện.";
+  }
+
+}
+function formatvnd(n) {
+  return n.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+}
+

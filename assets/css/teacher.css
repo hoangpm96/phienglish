@@ -29,3 +29,25 @@ audio {
         width: 100%;
         color: #F39C12;
     }
+/* .subscribe-form select ::-ms-expand { 
+    display: none; 
+  } 
+.subscribe-form select { 
+    /* for Firefox */ 
+    -moz-appearance: none; 
+    /* for Safari, Chrome, Opera */ 
+    -webkit-appearance: none; 
+  }  */
+/* .subscribe-form :after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 1rem;
+    color: #F39C12;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 6px solid #F39C12;
+    pointer-events: none;
+} */
