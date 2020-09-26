@@ -64,7 +64,7 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         var password;
         var pass1 = "develop";
         var pass2 = " develop123";
@@ -77,7 +77,7 @@
             alert('Mật khẩu không chính xác. Trang web sẽ đưa bạn về trang chủ.');
             window.location = "index.html";
         }
-    </script>
+    </script> -->
     <!--====== PRELOADER PART START ======-->
 
     <!-- <div class="preloader">
@@ -126,14 +126,11 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#tuitionlist">Danh sách học phí</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#register">Đăng ký học ngay</a>
-                                    </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
 
                             <div class="navbar-btn d-none d-sm-inline-block">
-                                <a class="main-btn" data-scroll-nav="0" href="index.html">Trở về trang chủ</a>
+                                <a class="main-btn" data-scroll-nav="0" href="#register">Đăng ký học ngay</a>
                             </div>
                         </nav> <!-- navbar -->
                     </div>
@@ -174,26 +171,37 @@
                         <div class="col-lg-6">
                             <div class="subscribe-content mt-45">
                                 <h2 class="subscribe-title"><span>Công cụ tính</span> Học phí</h2>
-                                <p id="introduction" class="mt-10">Vui lòng chọn thông tin và tính học phí.</p>
+                                <p id="introduction" class="mt-10">Công cụ hỗ trợ tính học phí và quà tặng theo khóa
+                                    học.<br>Vui lòng chọn thông tin và tính học phí.</p>
+                                <p id="introduction2" class="mt-10" style="font-style: italic; font-size: 13px;">Lưu ý:
+                                    Học phí cho đăng ký học theo từng giờ riêng lẻ. Vui lòng xem tại bảng danh sách học
+                                    phí.</p>
                                 <div class="teacherinfo mt-10">
+                                    <p id="teachertitle" style="font-weight: 700; font-style: italic; color:#F39C12;"></p>
                                     <p id="typeOfTeacher"></p>
                                     <p id="changeTeacher"></p>
                                 </div>
                                 <div class="tuitionstyle mt-10">
+                                    <p id="tuitiontitle" style="font-weight: 700; font-style: italic; color:#F39C12;">
+                                    </p>
                                     <p id="tuitiontotal"></p>
                                     <p id="vndtuitiontotal"></p>
                                     <p id="tuitionperhour"></p>
                                     <p id="hourstostudy"></p>
                                 </div>
                                 <div class="trying mt-10">
+                                    <p id="tryingtitle" style="font-weight: 700; font-style: italic; color:#F39C12;">
+                                    </p>
                                     <p id="tryingclasses"></p>
                                     <p id="tryingclassesinfo"></p>
                                 </div>
                                 <div class="extraclasses mt-10">
+                                    <p id="extratitle" style="font-weight: 700; font-style: italic; color:#F39C12;"></p>
                                     <p id="extraweeks"></p>
                                     <p id="extrahours"></p>
                                     <p id="extravalue"></p>
                                 </div>
+                                <a class="main-btn mt-20" id="chooseTeacher" data-scroll-nav="0" href="teacher.html"></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -581,7 +589,7 @@
                         <div class="copyright d-sm-flex justify-content-between">
                             <div class="copyright-content">
                                 <p class="text">Integration by: <a href="https://toilamba.com" rel="nofollow"
-                                        target="_blank">Hoang Phan</a></p>
+                                        target="_blank">Hoang Phan</a> - Nếu bạn muốn có ngay website tương tự như tôi. Liên hệ để đặt: 0326562797 (Phone/Zalo)</p>
                             </div> <!-- copyright content -->
                         </div> <!-- copyright -->
                     </div>
@@ -638,26 +646,6 @@
                     errorMessage.style.display = "block";
                 })
         })
-        // function showLoadingIndicator() {
-        //     form.classList.add('is-hidden')
-        //     loading.classList.remove('is-hidden')
-        // }
-
-        // function showSuccessMessage(response) {
-        //     console.log('Thành công rồi!', response)
-        //     setTimeout(() => {
-        //         successMessage.classList.remove('is-hidden')
-        //         loading.classList.add('is-hidden')
-        //     }, 500)
-        // }
-
-        // function showErrorMessage(error) {
-        //     console.error('Thất bại rồi!', error.message)
-        //     setTimeout(() => {
-        //         errorMessage.classList.remove('is-hidden')
-        //         loading.classList.add('is-hidden')
-        //     }, 500)
-        // }
     </script>
 
     <!--====== tuition js ======-->

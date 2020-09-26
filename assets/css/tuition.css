@@ -7,3 +7,12 @@
 .card-body ul {
     padding-bottom: 40px;
 }
+
+.subscribe-form select {
+    border: 2px solid #E1E1E1;
+    height: 65px;
+    padding: 0 30px;
+    border-radius: 5px;
+    width: 100%;
+    color: #F39C12;
+}

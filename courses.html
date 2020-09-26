@@ -5,14 +5,14 @@
     <meta charset="utf-8">
 
     <!--====== Title ======-->
-    <title>Học phí - phiEnglish - Tiếng Anh Online với giáo viên Philippines</title>
+    <title>phiEnglish - Tiếng Anh Online với giáo viên Philippines</title>
 
     <meta name="description"
         content="Dịch vụ kết nối việc học Tiếng Anh giữa học viên và giáo viên Philippines với giá cả hợp lý nhất, được cung cấp bởi học viên từng học Tiếng Anh tại Philippines">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- share in social -->
-    <meta property="og:title" content="Công cụ tính học phí - Tiếng Anh Online (1-1) với giáo viên Philippines">
+    <meta property="og:title" content="phiEnglish - Tiếng Anh Online (1-1) với giáo viên Philippines">
     <meta property="og:description"
         content="phiEnglish - Giao tiếp tiếng Anh tốt hơn khi học tiếng Anh với giáo viên Philippines">
     <meta property="og:site_name" content="phiEnglish">
@@ -51,36 +51,15 @@
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="assets/css/teacher.css">
-    <!--====== tuition CSS ======-->
+    <!--====== FQA CSS ======-->
     <link rel="stylesheet" href="assets/css/tuition.css">
-    <!--====== faq CSS ======-->
-    <link rel="stylesheet" href="assets/css/faq.css">
-    <!--====== fqa js ======-->
-    <script src="assets/js/faq.js"></script>
-
 
 </head>
 
 <body>
-    <script>
-        var password;
-        var pass1 = "develop";
-        var pass2 = " develop123";
-        var pass3 = "develop111";
-        var pass4 = " develop112";
-        password = prompt('Tính năng đang được phát triển, vui lòng nhập mật khẩu để xem!', ' ');
-        if (password == pass1 || password == pass2 || password == pass3 || password == pass4)
-            alert('Mật khẩu chính xác. Vui lòng nhấn OK để xem version đang phát triển!');
-        else {
-            alert('Mật khẩu không chính xác. Trang web sẽ đưa bạn về trang chủ.');
-            window.location = "index.html";
-        }
-    </script>
     <!--====== PRELOADER PART START ======-->
 
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="loader">
             <div class="ytp-spinner">
                 <div class="ytp-spinner-container">
@@ -95,7 +74,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!--====== PRELOADER PART ENDS ======-->
 
@@ -121,13 +100,19 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="#tuitioncalculator">Công cụ tính học phí</a>
+                                        <a class="page-scroll" href="#esl">Giao tiếp</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#tuitionlist">Danh sách học phí</a>
+                                        <a class="page-scroll" href="#business">Tiếng anh Thương mại</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#register">Đăng ký học ngay</a>
+                                        <a class="page-scroll" href="#toeic">TOEIC</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#ielts">IELTs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#group2">Học theo nhóm</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
@@ -146,14 +131,11 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="header-hero-content text-center">
-                            <h3 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Học phí
-                                vô cùng nhẹ</h3>
-                            <h2 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Hãy
-                                tính ngay học phí cần phải chi trả</h2>
-                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">Chỉ từ 5$/giờ
-                                cho học online với giáo viên Philippines</p>
-                            <a href="#tuitioncalculator" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
-                                data-wow-delay="0.8s">Dùng công cụ tính học phí</a>
+                            <h3 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Chúng tôi cung cấp nhiều loại khóa học</h3>
+                            <h2 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Hãy chọn ngay khóa học phù hợp với mình</h2>
+                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">Chọn vào khóa học để xem chi tiết</p>
+                            <a href="#esl" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
+                                data-wow-delay="0.8s">Xem ngay khóa giao tiếp</a>
                             <p style="height: 100px;"></p>
                         </div> <!-- header hero content -->
                     </div>
@@ -164,302 +146,219 @@
     </header>
 
     <!--====== HEADER PART ENDS ======-->
-    <!--====== TUITION TOOL PART START ======-->
-    <section id="tuitioncalculator" class="services-area pt-50">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div id="tuitioncalculator" class="subscribe-area wow fadeIn" data-wow-duration="1s"
-                    data-wow-delay="0.5s">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="subscribe-content mt-45">
-                                <h2 class="subscribe-title"><span>Công cụ tính</span> Học phí</h2>
-                                <p id="introduction" class="mt-10">Vui lòng chọn thông tin và tính học phí.</p>
-                                <div class="teacherinfo mt-10">
-                                    <p id="typeOfTeacher"></p>
-                                    <p id="changeTeacher"></p>
-                                </div>
-                                <div class="tuitionstyle mt-10">
-                                    <p id="tuitiontotal"></p>
-                                    <p id="vndtuitiontotal"></p>
-                                    <p id="tuitionperhour"></p>
-                                    <p id="hourstostudy"></p>
-                                </div>
-                                <div class="trying mt-10">
-                                    <p id="tryingclasses"></p>
-                                    <p id="tryingclassesinfo"></p>
-                                </div>
-                                <div class="extraclasses mt-10">
-                                    <p id="extraweeks"></p>
-                                    <p id="extrahours"></p>
-                                    <p id="extravalue"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="subscribe-form mt-50">
-                                <select name="typeOfCourse" id="tcourse" required>
-                                    <option value="" selected>Chọn khóa học</option>
-                                    <option value="1">Giao tiếp</option>
-                                    <option value="2">Giao tiếp (giáo viên Việt Nam)</option>
-                                    <option value="3">Tiếng Anh Thương Mại</option>
-                                    <option value="4">TOEIC</option>
-                                    <option value="5">IELTs</option>
-                                    <option value="6">Nhóm (2 học viên)</option>
-                                    <option value="7">Nhóm (3 học viên)</option>
-                                </select>
-                                <select style="margin-top:10px;" class="selector" name="numOfWeek" id="nweek" required>
-                                    <option value="" selected>Chọn số tuần học</option>
-                                    <option value="4">4 tuần (1 tháng)</option>
-                                    <option value="8">8 tuần (2 tháng)</option>
-                                    <option value="12">12 tuần (3 tháng)</option>
-                                    <option value="16">16 tuần (4 tháng)</option>
-                                    <option value="20">20 tuần (5 tháng)</option>
-                                    <option value="24">24 tuần (6 tháng)</option>
-                                    <option value="28">28 tuần (7 tháng)</option>
-                                    <option value="32">32 tuần (8 tháng)</option>
-                                    <option value="36">36 tuần (9 tháng)</option>
-                                    <option value="40">40 tuần (10 tháng)</option>
-                                    <option value="44">44 tuần (11 tháng)</option>
-                                    <option value="48">48 tuần (12 tháng)</option>
-                                </select>
-                                <select style="margin-top:10px;" class="selector" name="numOfDay" id="nday" required>
-                                    <option value="" selected>Chọn số buổi bạn học 1 tuần</option>
-                                    <option value="1">1 buổi/tuần</option>
-                                    <option value="2">2 buổi/tuần</option>
-                                    <option value="3">3 buổi/tuần</option>
-                                    <option value="4">4 buổi/tuần</option>
-                                    <option value="5">5 buổi/tuần</option>
-                                    <option value="6">6 buổi/tuần</option>
-                                </select>
-                                <select style="margin-top:10px;" class="selector" name="numOfHour" id="nhour" required>
-                                    <option value="" selected>Chọn số giờ bạn học 1 buổi</option>
-                                    <option value="1">1 giờ/buổi</option>
-                                    <option value="2">2 giờ/buổi</option>
-                                    <option value="3">3 giờ/buổi</option>
-                                </select>
-                                <button class="main-btn mt-10" onclick="calculateTuition()">Tính học phí</button>
-                            </div>
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- subscribe area -->
+    <!--====== COURSE PART START ======-->
 
+    <section id="esl" class="about-area pt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <div class="line"></div>
+                            <h3 class="title"><span>Khóa học </span>Giao tiếp</h3>
+                        </div> <!-- section title -->
+                        <p class="text">Tên gốc của khóa học giao tiếp này là ESL (English as Second Language). Chương trình học Tiếng Anh như là một ngôn ngữ thứ hai.</p>
+                        <p class="text" style="margin-top: 10px;">Khóa học này giáo viên chúng tôi giúp học viên nâng cao cả 4 kỹ năng: Nghe, Nói, Đọc Viết.
+                        </p>
+                        <p class="text" style="margin-top: 10px;">Linh hoạt theo trình độ của học viên.</p>
+                        <p class="text" style="margin-top: 10px;">Độ dài của lớp là 1 giờ (50 phút học, 10 phút giải
+                            lao), linh hoạt cho học viên sắp xếp 1 buổi học là 1, 2 hay 3 giờ.</p>
+                        <p class="text" style="margin-top: 10px;">Học online thông qua <a style="color:#F39C12;"
+                                href="https://www.skype.com/en/get-skype/" target="_blank">Skype</a> hoặc
+                            <a style="color:#F39C12;" href="https://zoom.us/download" target="_blank">Zoom</a>.</p>
+                        <a href="tuition.html#tuitioncalculator" class="main-btn" style="margin-top: 20px;">Xem học phí ngay</a>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s"
+                        data-wow-delay="0.5s">
+                        <img src="assets/images/courses/esl.png" alt="esl">
+                    </div> <!-- about image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="about-shape-1">
+            <img src="assets/images/about-shape-1.svg" alt="shape">
+        </div>
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="business" class="about-area pt-70">
+        <div class="about-shape-2">
+            <img src="assets/images/about-shape-2.svg" alt="shape">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-last">
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <div class="line"></div>
+                            <h3 class="title"><span>Khóa học</span> Tiếng Anh Thương mại</h3>
+                        </div> <!-- section title -->
+                        <p class="text">Học viên không cần đến Philippines mà vẫn được học giáo trình theo những trung
+                            tâm mà các giáo viên theo dạy tại Philippines.</p>
+                        <p class="text" style="margin-top: 10px;">Giáo viên giàu kinh nghiệm trong giảng dạy cho các học
+                            viên đế từ nhiều quốc gia ở khu vực châu Á như: Việt Nam, Nhật, Hàn, Trung Quốc, Đài Loan,
+                            Hồng Kông,...</p>
+                        <p class="text" style="margin-top: 10px;">Học viên được yêu cầu đổi giáo trình cũng như phương
+                            pháp để phù hợp với bản thân.</p>
+                        <a href="#register" class="main-btn" style="margin-top: 20px;">Học thử miễn phí</a>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s"
+                        data-wow-delay="0.5s">
+                        <img src="assets/images/courses/business.png" alt="Business">
+                    </div> <!-- about image -->
+                </div>
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
 
-    <!--====== TUITION TOOL PART ENDS ======-->
-    <!--====== FAQ PART START ======-->
-    <section id="tuitionlist" class="qa-area pt-70">
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="toeic" class="about-area pt-70">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="section-title text-center pb-60">
-                        <div class="line m-auto"></div>
-                        <h3 class="title"><span>Danh sách</span> Học phí</h3>
-                        <p>Mỗi giờ học được quy định là 50 phút học và 10 phút giải lao.</p>
-                    </div> <!-- section title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <div class="line"></div>
+                            <h3 class="title">TOEIC</h3>
+                        </div> <!-- section title -->
+                        <p class="text">Trước khi quyết định học, học viên được phép học thử với giáo viên 25 phút.</p>
+                        <p class="text" style="margin-top: 10px;">Sau mỗi 16 giờ học, học viên được phép đổi giáo viên
+                            khác.</p>
+                        <p class="text" style="margin-top: 10px;">Nhận thêm giờ học nếu đăng ký học từ 32h trở lên. <a
+                                style="color:#F39C12;"
+                                href="tuition.html">Xem quà tặng dựa theo khóa học tại đây</a></p>
+                        <p class="text" style="margin-top: 10px;">Được bảo lưu và chuyển nhượng khóa học, tối đa 6
+                            tháng.</p>
+                        <p class="text" style="margin-top: 10px;">Học với giá thành cực kỳ hợp lý (các bạn có thể so
+                            sánh với các trung tâm khác).</p>
+                        <a href="#register" class="main-btn" style="margin-top: 20px;">Học thử miễn phí</a>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s"
+                        data-wow-delay="0.5s">
+                        <img src="assets/images/courses/toeic.png" alt="toeic">
+                    </div> <!-- about image -->
                 </div>
             </div> <!-- row -->
-            <div class="row wow fadeInUpBig col-md-6 offset-md-3" data-wow-duration="1s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUpBig;     max-width: 750px;
-            margin-left: auto;
-            margin-right: auto;">
-                <div class="faq" id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-1">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1"
-                                    data-aria-expanded="true" data-aria-controls="faqCollapse-1" aria-expanded="true">
-                                    <span class="badge">1</span>Giao tiếp
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-1" class="collapse show" aria-labelledby="faqHeading-1"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <h3>Giao tiếp 1 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 16h/tháng</li>
-                                    <li>Học phí: 5$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                                <h3>Giao tiếp 2 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 8h-15h/tháng</li>
-                                    <li>Học phí: 5.5$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                                <h3>Giao tiếp 3 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học theo buổi tự chọn</li>
-                                    <li>Học phí: 6$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán trước buổi học.</li>
-                                    <li>Không hỗ trợ học thử.</li>
-                                </ul>
-                                <h3>Giao tiếp 4 - Việt Nam</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 8h/tháng</li>
-                                    <li>Học phí: 105,000đ/h.</li>
-                                    <li>Giáo viên: Việt Nams.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-2">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2"
-                                    data-aria-expanded="false" data-aria-controls="faqCollapse-2">
-                                    <span class="badge">2</span>Tiếng Anh thương mại
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <h3>Business 1 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 16h/tháng</li>
-                                    <li>Học phí: 6$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                                <h3>Business 2 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 8h-15h/tháng</li>
-                                    <li>Học phí: 6.3$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                                <h3>Business 3 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học theo buổi tự chọn</li>
-                                    <li>Học phí: 6.6$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán trước buổi học.</li>
-                                    <li>Không hỗ trợ học thử.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-3">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3"
-                                    data-aria-expanded="false" data-aria-controls="faqCollapse-3">
-                                    <span class="badge">3</span>TOEICs
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <h3>TOEIC 1 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 16h/tháng</li>
-                                    <li>Học phí: 6.5$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                                <h3>TOEIC 2 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 8h-15h/tháng</li>
-                                    <li>Học phí: 6.9$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-4">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4"
-                                    data-aria-expanded="false" data-aria-controls="faqCollapse-4">
-                                    <span class="badge">4</span>IELTs
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <h3>IELTs 1 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 16h/tháng</li>
-                                    <li>Học phí: 7$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                                <h3>IELTs 2 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 8h-15h/tháng</li>
-                                    <li>Học phí: 7.5$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-5">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5"
-                                    data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-                                    <span class="badge">5</span>Học nhóm
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <h3>Group 1 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 16h/tháng</li>
-                                    <li>Học giao tiếp/business.</li>
-                                    <li>Số lượng: 2 học viên.</li>
-                                    <li>Học phí: 8$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                                <h3>Group 2 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 8h-15h/tháng</li>
-                                    <li>Học giao tiếp/business.</li>
-                                    <li>Số lượng: 2 học viên.</li>
-                                    <li>Học phí: 8.5$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                                <h3>Group 3 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 16h/tháng</li>
-                                    <li>Học giao tiếp/business.</li>
-                                    <li>Số lượng: 3 học viên.</li>
-                                    <li>Học phí: 10$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                                <h3>Group 4 - Philippines</h3>
-                                <ul>
-                                    <li>Điều kiện: học từ 8h-15h/tháng</li>
-                                    <li>Học giao tiếp/business.</li>
-                                    <li>Số lượng: 3 học viên.</li>
-                                    <li>Học phí: 11$/h.</li>
-                                    <li>Giáo viên: Philippines.</li>
-                                    <li>Thanh toán sau khi quyết định học.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        </div> <!-- container -->
+        <div class="about-shape-1">
+            <img src="assets/images/about-shape-1.svg" alt="shape">
+        </div>
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+    <section id="ielts" class="about-area pt-70">
+        <div class="about-shape-2">
+            <img src="assets/images/about-shape-2.svg" alt="shape">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-last">
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <div class="line"></div>
+                            <h3 class="title">IELTS</h3>
+                        </div> <!-- section title -->
+                        <p class="text">Học viên không cần đến Philippines mà vẫn được học giáo trình theo những trung
+                            tâm mà các giáo viên theo dạy tại Philippines.</p>
+                        <p class="text" style="margin-top: 10px;">Giáo viên giàu kinh nghiệm trong giảng dạy cho các học
+                            viên đế từ nhiều quốc gia ở khu vực châu Á như: Việt Nam, Nhật, Hàn, Trung Quốc, Đài Loan,
+                            Hồng Kông,...</p>
+                        <p class="text" style="margin-top: 10px;">Học viên được yêu cầu đổi giáo trình cũng như phương
+                            pháp để phù hợp với bản thân.</p>
+                        <a href="#register" class="main-btn" style="margin-top: 20px;">Học thử miễn phí</a>
+                    </div> <!-- about content -->
                 </div>
-            </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s"
+                        data-wow-delay="0.5s">
+                        <img src="assets/images/about2.svg" alt="about">
+                    </div> <!-- about image -->
+                </div>
+            </div> <!-- row -->
         </div> <!-- container -->
     </section>
-    <!--====== FAQ PART ENDS ======-->
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== VIDEO COUNTER PART START ======-->
+
+    <section id="group2" class="video-counter pt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="video-content mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img class="dots" src="assets/images/dots.svg" alt="dots">
+                        <div class="video-wrapper">
+                            <div class="video-image">
+                                <img src="assets/images/philippines.jpg" alt="video">
+                            </div>
+                        </div> <!-- video wrapper -->
+                    </div> <!-- video content -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="counter-wrapper mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="counter-content">
+                            <div class="section-title">
+                                <div class="line"></div>
+                                <h3 class="title"><span>Học tiếng Anh </span>theo nhóm</h3>
+                            </div> <!-- section title -->
+                            <p class="text">- Ngôn ngữ chính thức thứ 2 tại Philippines là Tiếng Anh.</p>
+                            <p class="text" style="margin-top: 5px;">- Chương trình truyền hình, giao tiếp, làm việc ở
+                                Philippines đều bằng Tiếng Anh.</p>
+                            <p class="text" style="margin-top: 5px;">- Đây là
+                                <a style="color:#F39C12;"
+                                    href="https://cudoo.com/blog/which-countries-have-the-most-english-speakers/">quốc
+                                    gia đứng thứ 4</a> trong danh sách số người dùng Tiếng Anh nhiều nhất thế giới.</p>
+                            <p class="text" style="margin-top: 5px;">- Tổ chức ETS của Mỹ liên tục xếp hạng Philippines
+                                là quốc gia nói tiếng Anh lớn thứ 5 trên thế giới.</p>
+                        </div> <!-- counter content -->
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <div
+                                    class="single-counter counter-color-1 d-flex align-items-center justify-content-center">
+                                    <div class="counter-items text-center">
+                                        <span class="count">Rank <span class="counter">5</span>th</span>
+                                        <p class="text">Use English</p>
+                                    </div>
+                                </div> <!-- single counter -->
+                            </div>
+                            <div class="col-4">
+                                <div
+                                    class="single-counter counter-color-2 d-flex align-items-center justify-content-center">
+                                    <div class="counter-items text-center">
+                                        <span class="count"><span class="counter">37</span>K</span>
+                                        <p class="text">English Speaker</p>
+                                    </div>
+                                </div> <!-- single counter -->
+                            </div>
+                            <div class="col-4">
+                                <div
+                                    class="single-counter counter-color-3 d-flex align-items-center justify-content-center">
+                                    <div class="counter-items text-center">
+                                        <span class="count"><span class="counter">2</span>nd</span>
+                                        <p class="text">Official Language</p>
+                                    </div>
+                                </div> <!-- single counter -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- counter wrapper -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== VIDEO COUNTER PART ENDS ======-->
 
     <!--====== FOOTER PART START ======-->
 
@@ -581,7 +480,7 @@
                         <div class="copyright d-sm-flex justify-content-between">
                             <div class="copyright-content">
                                 <p class="text">Integration by: <a href="https://toilamba.com" rel="nofollow"
-                                        target="_blank">Hoang Phan</a></p>
+                                        target="_blank">Hoang Phan</a> - Nếu bạn muốn có ngay website tương tự như tôi. Liên hệ để đặt: 0326562797 (Phone/Zalo)</p>
                             </div> <!-- copyright content -->
                         </div> <!-- copyright -->
                     </div>
@@ -638,31 +537,7 @@
                     errorMessage.style.display = "block";
                 })
         })
-        // function showLoadingIndicator() {
-        //     form.classList.add('is-hidden')
-        //     loading.classList.remove('is-hidden')
-        // }
-
-        // function showSuccessMessage(response) {
-        //     console.log('Thành công rồi!', response)
-        //     setTimeout(() => {
-        //         successMessage.classList.remove('is-hidden')
-        //         loading.classList.add('is-hidden')
-        //     }, 500)
-        // }
-
-        // function showErrorMessage(error) {
-        //     console.error('Thất bại rồi!', error.message)
-        //     setTimeout(() => {
-        //         errorMessage.classList.remove('is-hidden')
-        //         loading.classList.add('is-hidden')
-        //     }, 500)
-        // }
     </script>
-
-    <!--====== tuition js ======-->
-    <script src="assets/js/tuition.js"></script>
-
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
