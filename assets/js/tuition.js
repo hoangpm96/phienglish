@@ -3,9 +3,9 @@ function calculateTuition() {
   var numOfWeek = document.getElementById("nweek").value;
   var numOfDay = document.getElementById("nday").value;
   var numOfHour = document.getElementById("nhour").value;
-  var pricetemplate = [0, 5, 4.506, 6, 6.5, 7, 8, 10
-    , 5.5, 4.6, 6.3, 6.9, 7.5, 8.5, 11
-    , 6, 5, 6.6, 7.2, 7.8, 10, 12.5];
+  var pricetemplate = [0, 5, 4.506, 6, 7, 8, 8, 10
+                      , 5.5, 4.6, 6.3, 7.2, 8.2, 8.5, 11
+                      , 6, 5, 6.6, 7.5, 8.5, 10, 12.5];
   var extratemplate = [0, 0, 1, 2, 2.5,3,4,4.5,5, 7, 7.5, 8, 10]; // weeks
                    // 0T,1T,2T,3T,4T,5T,6T,7T,8T,9T,10T,11T,12T
   var vnd = 23300;

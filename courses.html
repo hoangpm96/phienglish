@@ -57,6 +57,20 @@
 </head>
 
 <body>
+    <script>
+        var password;
+        var pass1 = "develop";
+        var pass2 = " develop123";
+        var pass3 = "develop111";
+        var pass4 = " develop112";
+        password = prompt('Tính năng đang được phát triển, vui lòng nhập mật khẩu để xem!', ' ');
+        if (password == pass1 || password == pass2 || password == pass3 || password == pass4)
+            alert('Mật khẩu chính xác. Vui lòng nhấn OK để xem version đang phát triển!');
+        else {
+            alert('Mật khẩu không chính xác. Trang web sẽ đưa bạn về trang chủ.');
+            window.location = "index.html";
+        }
+    </script>
     <!--====== PRELOADER PART START ======-->
 
     <div class="preloader">
@@ -282,83 +296,48 @@
                 <div class="col-lg-6 order-lg-first">
                     <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s"
                         data-wow-delay="0.5s">
-                        <img src="assets/images/about2.svg" alt="about">
+                        <img src="assets/images/courses/ielts.png" alt="IELTs">
                     </div> <!-- about image -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
-
-    <!--====== ABOUT PART ENDS ======-->
-
-    <!--====== VIDEO COUNTER PART START ======-->
-
-    <section id="group2" class="video-counter pt-70">
+    <section id="toeic" class="about-area pt-70">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="video-content mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img class="dots" src="assets/images/dots.svg" alt="dots">
-                        <div class="video-wrapper">
-                            <div class="video-image">
-                                <img src="assets/images/philippines.jpg" alt="video">
-                            </div>
-                        </div> <!-- video wrapper -->
-                    </div> <!-- video content -->
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <div class="line"></div>
+                            <h3 class="title">Group</h3>
+                        </div> <!-- section title -->
+                        <p class="text">Trước khi quyết định học, học viên được phép học thử với giáo viên 25 phút.</p>
+                        <p class="text" style="margin-top: 10px;">Sau mỗi 16 giờ học, học viên được phép đổi giáo viên
+                            khác.</p>
+                        <p class="text" style="margin-top: 10px;">Nhận thêm giờ học nếu đăng ký học từ 32h trở lên. <a
+                                style="color:#F39C12;"
+                                href="tuition.html">Xem quà tặng dựa theo khóa học tại đây</a></p>
+                        <p class="text" style="margin-top: 10px;">Được bảo lưu và chuyển nhượng khóa học, tối đa 6
+                            tháng.</p>
+                        <p class="text" style="margin-top: 10px;">Học với giá thành cực kỳ hợp lý (các bạn có thể so
+                            sánh với các trung tâm khác).</p>
+                        <a href="#register" class="main-btn" style="margin-top: 20px;">Học thử miễn phí</a>
+                    </div> <!-- about content -->
                 </div>
                 <div class="col-lg-6">
-                    <div class="counter-wrapper mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                        <div class="counter-content">
-                            <div class="section-title">
-                                <div class="line"></div>
-                                <h3 class="title"><span>Học tiếng Anh </span>theo nhóm</h3>
-                            </div> <!-- section title -->
-                            <p class="text">- Ngôn ngữ chính thức thứ 2 tại Philippines là Tiếng Anh.</p>
-                            <p class="text" style="margin-top: 5px;">- Chương trình truyền hình, giao tiếp, làm việc ở
-                                Philippines đều bằng Tiếng Anh.</p>
-                            <p class="text" style="margin-top: 5px;">- Đây là
-                                <a style="color:#F39C12;"
-                                    href="https://cudoo.com/blog/which-countries-have-the-most-english-speakers/">quốc
-                                    gia đứng thứ 4</a> trong danh sách số người dùng Tiếng Anh nhiều nhất thế giới.</p>
-                            <p class="text" style="margin-top: 5px;">- Tổ chức ETS của Mỹ liên tục xếp hạng Philippines
-                                là quốc gia nói tiếng Anh lớn thứ 5 trên thế giới.</p>
-                        </div> <!-- counter content -->
-                        <div class="row no-gutters">
-                            <div class="col-4">
-                                <div
-                                    class="single-counter counter-color-1 d-flex align-items-center justify-content-center">
-                                    <div class="counter-items text-center">
-                                        <span class="count">Rank <span class="counter">5</span>th</span>
-                                        <p class="text">Use English</p>
-                                    </div>
-                                </div> <!-- single counter -->
-                            </div>
-                            <div class="col-4">
-                                <div
-                                    class="single-counter counter-color-2 d-flex align-items-center justify-content-center">
-                                    <div class="counter-items text-center">
-                                        <span class="count"><span class="counter">37</span>K</span>
-                                        <p class="text">English Speaker</p>
-                                    </div>
-                                </div> <!-- single counter -->
-                            </div>
-                            <div class="col-4">
-                                <div
-                                    class="single-counter counter-color-3 d-flex align-items-center justify-content-center">
-                                    <div class="counter-items text-center">
-                                        <span class="count"><span class="counter">2</span>nd</span>
-                                        <p class="text">Official Language</p>
-                                    </div>
-                                </div> <!-- single counter -->
-                            </div>
-                        </div> <!-- row -->
-                    </div> <!-- counter wrapper -->
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s"
+                        data-wow-delay="0.5s">
+                        <img src="assets/images/courses/group.png" alt="group">
+                    </div> <!-- about image -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
+        <div class="about-shape-1">
+            <img src="assets/images/about-shape-1.svg" alt="shape">
+        </div>
     </section>
 
-    <!--====== VIDEO COUNTER PART ENDS ======-->
+    <!--====== ABOUT PART ENDS ======-->
 
     <!--====== FOOTER PART START ======-->
 
@@ -464,7 +443,7 @@
                             </div>
                             <ul class="contact">
                                 <li>(+84)326 56 2797 (Zalo)</li>
-                                <li>hoangpm.qn96@gmail.com</li>
+                                <li>contact@phienglish.com</li>
                                 <li>www.toilamba.com</li>
                                 <li>Facebook - <a href="https://facebook.com/hoangpm96" style="color:#F39C12;"
                                         target="_blank">Hoàng Phan</a></li>
