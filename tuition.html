@@ -199,7 +199,7 @@
                                     <p id="extrahours"></p>
                                     <p id="extravalue"></p>
                                 </div>
-                                <a class="main-btn mt-20" id="chooseTeacher" data-scroll-nav="0" href="teacher.html"></a>
+                                <a class="main-btn mt-20" id="chooseTeacher" data-scroll-nav="0" href="#register"></a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -207,12 +207,13 @@
                                 <select name="typeOfCourse" id="tcourse" required>
                                     <option value="" selected>Chọn khóa học</option>
                                     <option value="1">Giao tiếp</option>
-                                    <option value="2">Giao tiếp (giáo viên Việt Nam)</option>
-                                    <option value="3">Tiếng Anh Thương Mại</option>
-                                    <option value="4">TOEIC</option>
-                                    <option value="5">IELTs</option>
-                                    <option value="6">Nhóm (2 học viên)</option>
-                                    <option value="7">Nhóm (3 học viên)</option>
+                                    <option value="2">For Kid (Dành cho trẻ em)</option>
+                                    <option value="3">Giao tiếp (giáo viên Việt Nam)</option>
+                                    <option value="4">Tiếng Anh Thương Mại</option>
+                                    <option value="5">TOEIC</option>
+                                    <option value="6">IELTs</option>
+                                    <option value="7">Nhóm (2 học viên)</option>
+                                    <option value="8">Nhóm (3 học viên)</option>
                                 </select>
                                 <select style="margin-top:10px;" class="selector" name="numOfWeek" id="nweek" required>
                                     <option value="" selected>Chọn số tuần học</option>
@@ -320,11 +321,40 @@
                             <div class="mb-0">
                                 <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2"
                                     data-aria-expanded="false" data-aria-controls="faqCollapse-2">
-                                    <span class="badge">2</span>Tiếng Anh thương mại
+                                    <span class="badge">2</span>For Kid (Tiếng Anh cho trẻ em)
                                 </h5>
                             </div>
                         </div>
                         <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <h3>For Kid 1 - Philippines</h3>
+                                <ul>
+                                    <li>Điều kiện: học từ 16h/tháng</li>
+                                    <li>Học phí: 5$/h.</li>
+                                    <li>Giáo viên: Philippines.</li>
+                                    <li>Thanh toán sau khi quyết định học.</li>
+                                </ul>
+                                <h3>For Kid 2 - Philippines</h3>
+                                <ul>
+                                    <li>Điều kiện: học từ 8h-15h/tháng</li>
+                                    <li>Học phí: 5.5$/h.</li>
+                                    <li>Giáo viên: Philippines.</li>
+                                    <li>Thanh toán sau khi quyết định học.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="card">
+                        <div class="card-header" id="faqHeading-3">
+                            <div class="mb-0">
+                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3"
+                                    data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                                    <span class="badge">3</span>Tiếng Anh thương mại
+                                </h5>
+                            </div>
+                        </div>
+                        <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3"
                             data-parent="#accordion">
                             <div class="card-body">
                                 <h3>Business 1 - Philippines</h3>
@@ -353,15 +383,15 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="faqHeading-3">
+                        <div class="card-header" id="faqHeading-4">
                             <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3"
-                                    data-aria-expanded="false" data-aria-controls="faqCollapse-3">
-                                    <span class="badge">3</span>TOEICs
+                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4"
+                                    data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+                                    <span class="badge">4</span>TOEICs
                                 </h5>
                             </div>
                         </div>
-                        <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3"
+                        <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4"
                             data-parent="#accordion">
                             <div class="card-body">
                                 <h3>TOEIC 1 - Philippines</h3>
@@ -382,15 +412,15 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="faqHeading-4">
+                        <div class="card-header" id="faqHeading-5">
                             <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4"
-                                    data-aria-expanded="false" data-aria-controls="faqCollapse-4">
-                                    <span class="badge">4</span>IELTs
+                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5"
+                                    data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+                                    <span class="badge">5</span>IELTs
                                 </h5>
                             </div>
                         </div>
-                        <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4"
+                        <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5"
                             data-parent="#accordion">
                             <div class="card-body">
                                 <h3>IELTs 1 - Philippines</h3>
@@ -411,15 +441,15 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="faqHeading-5">
+                        <div class="card-header" id="faqHeading-6">
                             <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5"
-                                    data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-                                    <span class="badge">5</span>Học nhóm
+                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6"
+                                    data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+                                    <span class="badge">6</span>Học nhóm
                                 </h5>
                             </div>
                         </div>
-                        <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5"
+                        <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6"
                             data-parent="#accordion">
                             <div class="card-body">
                                 <h3>Group 1 - Philippines</h3>
@@ -487,10 +517,10 @@
                                 <input name="fullname" type="text" placeholder="Nhập Họ và Tên">
                                 <input name="phonenumber" type="number" class="mt-10" placeholder="Nhập Số điện thoại"
                                     required>
-                                <input name="teacher" type="text" class="mt-10" placeholder="Giáo viên bạn chọn"
-                                    required>
+                                <input name="teacher" type="text" class="mt-10" placeholder="Giáo viên bạn chọn (không bắt buộc)">
                                 <select id="course" name="course" class="mt-10">
                                     <option value="esl">Khóa học Giao tiếp</option>
+                                    <option value="kid">Khóa học Dành cho trẻ em</option>
                                     <option value="business">Khóa học Business</option>
                                     <option value="TOEIC">Khóa học TOEIC</option>
                                     <option value="IELTs">Khóa học IELTs</option>

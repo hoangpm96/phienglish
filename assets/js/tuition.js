@@ -3,9 +3,9 @@ function calculateTuition() {
   var numOfWeek = document.getElementById("nweek").value;
   var numOfDay = document.getElementById("nday").value;
   var numOfHour = document.getElementById("nhour").value;
-  var pricetemplate = [0, 5, 4.506, 6, 7, 8, 8, 10
-                      , 5.5, 4.6, 6.3, 7.2, 8.2, 8.5, 11
-                      , 6, 5, 6.6, 7.5, 8.5, 10, 12.5];
+  var pricetemplate = [0, 5,5, 4.506, 6, 7, 8, 8, 10
+                      , 5.5,5.5, 4.6, 6.3, 7.2, 8.2, 8.5, 11
+                      , 6,6, 5, 6.6, 7.5, 8.5, 10, 12.5];
   var extratemplate = [0, 0, 1, 2, 2.5,3,4,4.5,5, 7, 7.5, 8, 10]; // weeks
                    // 0T,1T,2T,3T,4T,5T,6T,7T,8T,9T,10T,11T,12T
   var vnd = 23300;
@@ -61,14 +61,14 @@ function calculateTuition() {
   var nOfTrying = 1 + Math.floor(totalHour / 32);
   document.getElementById("introduction").innerHTML = "Kết quả:";
   document.getElementById("introduction2").innerHTML = "";
-  if (typeOfCourse == 2) {
+  if (typeOfCourse == 3) {
     document.getElementById("typeOfTeacher").innerHTML = "Giáo viên Việt Nam giảng dạy";
   }
   else {document.getElementById("typeOfTeacher").innerHTML = "Giáo viên Philippines giảng dạy"}
   document.getElementById("teachertitle").innerHTML = "Thông tin giáo viên:";
   document.getElementById("tuitiontitle").innerHTML = "Thông tin học phí:";
   document.getElementById("extratitle").innerHTML = "Quà tặng:";
-  document.getElementById("chooseTeacher").innerHTML = "Chọn giáo viên giảng dạy";
+  document.getElementById("chooseTeacher").innerHTML = "Đăng ký học ngay";
   document.getElementById("tuitiontotal").innerHTML = "Học phí của bạn là: $" + tuitiontotal;
   document.getElementById("vndtuitiontotal").innerHTML = "Học phí (vnd) của bạn là: " + formatvnd(vndtuitiontotal) + " đồng";
   document.getElementById("tuitionperhour").innerHTML = "Học phí mỗi giờ là: $" + unitprice  + " = " + formatvnd(unitprice*vnd) + " đồng";
