@@ -8,7 +8,7 @@ function calculateTuition() {
                       , 6,6, 5, 6.6, 7.5, 8.5, 10, 12.5];
   var extratemplate = [0, 0, 1, 2, 2.5,3,4,4.5,5, 7, 7.5, 8, 10]; // weeks
                    // 0T,1T,2T,3T,4T,5T,6T,7T,8T,9T,10T,11T,12T
-  var vnd = 23300;
+  var vnd = 23270;
 
   //validate input
   if (typeOfCourse == "") {
@@ -52,10 +52,8 @@ function calculateTuition() {
       id = 1;
     } else { id = 2; }
   };
-  //              get nOWeeks   get months
-  var extraWeek = extratemplate[Math.floor(numOfWeek/4)];
-  var extraHours = extraWeek*numOfDay*numOfHour;
-  var unitprice = pricetemplate[id * 7 + parseInt(typeOfCourse)];
+  var extraHours = Math.floor(totalHour/32)*4
+  var unitprice = pricetemplate[id * 8 + parseInt(typeOfCourse)];
   var tuitiontotal = totalHour * unitprice;
   var vndtuitiontotal = tuitiontotal * vnd;
   var nOfTrying = 1 + Math.floor(totalHour / 32);
@@ -79,9 +77,8 @@ function calculateTuition() {
     document.getElementById("tryingclassesinfo").innerHTML = "Mỗi buổi học thử cách nhau tối thiểu 32 giờ học, bạn có thể học thử để thay đổi giáo viên.";
     document.getElementById("changeTeacher").innerHTML = "Được phép đổi giáo viên.";
   }
-  if (extraWeek>0 & (totalHour >=32)) {
-    document.getElementById("extraweeks").innerHTML = "Quà tặng được tặng thêm: " + extraWeek + " tuần.";
-    document.getElementById("extrahours").innerHTML = "Số giờ được tặng tương ứng: " + extraHours + " giờ.";
+  if ((extraHours >0)) {
+    document.getElementById("extrahours").innerHTML = "Số giờ được tặng thêm: " + extraHours + " giờ.";
     document.getElementById("extravalue").innerHTML = "Giá trị quà tặng tương ứng: $" + extraHours*unitprice + " = " + formatvnd(extraHours*unitprice*vnd) + " đồng";
   } else {
     document.getElementById("extraweeks").innerHTML = "Không có quà tặng do số giờ học chưa đáp ứng đủ điều kiện.";
