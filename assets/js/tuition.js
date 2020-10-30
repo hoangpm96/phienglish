@@ -52,7 +52,7 @@ function calculateTuition() {
       id = 1;
     } else { id = 2; }
   };
-  var extraHours = Math.floor(totalHour/32)*4
+  var extraHours = Math.floor(totalHour/32)*2
   var unitprice = pricetemplate[id * 8 + parseInt(typeOfCourse)];
   var tuitiontotal = totalHour * unitprice;
   var vndtuitiontotal = tuitiontotal * vnd;
